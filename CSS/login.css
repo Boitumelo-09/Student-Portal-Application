@@ -1,0 +1,197 @@
+/* CSS/login.css */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background: url(../CSSPHOTOS/dope.png);
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #01081d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #01081d;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0em 2rem;
+  flex: 1;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #023047b6;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #01081d;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #023047b6;
+}
+form {
+  background-color: #01081d;
+  box-shadow: inset 0px 0px 10px white;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  line-height: 60px;
+  width: 100%;
+  max-width: 400px;
+  /* display: flex;
+  flex-direction: column;
+  gap: 1rem; */
+  animation: appear 1s ease;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+} */
+
+.inputlog {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 0.9em;
+  gap: 10px;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+/* label {
+  font-weight: bold;
+} */
+
+.inputlog input {
+  background-color: inherit;
+  border: none;
+  border-bottom: white 1px solid;
+  color: #b7c1e0;
+  padding: 0.5rem;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  outline: none;
+  width: 100%;
+}
+input::placeholder {
+  transition: all 0.5s ease-in-out;
+}
+.inputlog input:hover::placeholder {
+  color: #b7c1e0;
+  transform: translate(-8px, -9px);
+  font-size: small;
+  z-index: 1;
+  border-bottom: 1px solid #219ebc;
+  max-width: 3.6rem;
+  white-space: wrap;
+  align-items: center;
+  padding-inline: 2px;
+}
+.inputlog input:active::placeholder {
+  opacity: 0;
+}
+h1 {
+  animation: leSnake 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+  font-family: "Roboto";
+
+  font-size: clamp(1.5rem, 8vw, 3rem);
+  width: 100%;
+}
+@keyframes leSnake {
+  from,
+  to {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.rem {
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rem a {
+  color: ivory;
+}
+input[type="submit"] {
+  color: #023047;
+  box-shadow: inset 0px 0px 2px #01081d;
+  border: none;
+  background-color: #219ebc;
+  padding: min(0.5rem, 20px);
+  border-radius: 20px;
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.5s ease;
+  font-size: clamp(1.8rem, 3vw, 2rem);
+}
+
+input[type="submit"]:hover {
+  box-shadow: inset 200px 00px 2px #01081d;
+  color: white;
+  border: 1px solid #219ebc;
+}
+
+form {
+  text-align: center;
+}
+p {
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+button {
+  background-color: #219ebc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #777;
+  background-color: #01081d;
+  font-size: small;
+}
+footer a {
+  color: white;
+}
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
