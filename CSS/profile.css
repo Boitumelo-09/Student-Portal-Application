@@ -91,7 +91,12 @@ form {
 label {
   font-weight: bold;
 }
-
+.but{
+  display: none;
+} 
+button{
+  display:none;
+}
 input[type="file"],
 input[type="submit"] {
   background-color: #01081d;
@@ -158,9 +163,7 @@ input[type="submit"]:hover,
   text-align: center;
   white-space: wrap;
 }
-.log,
-.det {
-}
+
 ::-webkit-scrollbar {
   width: 12px;
   height: 10px;
