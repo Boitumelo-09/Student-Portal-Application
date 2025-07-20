@@ -70,7 +70,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
  
         <label for="profile" id="edit">EDIT IMAGE</label>
-        <input type="file" name="image" id="profile" required >
+        
+        
+    
+
+        
         <input type="submit" name="submit" id="submit" value="Save">
     </form>
 </fieldset>
@@ -122,7 +126,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
      <footer>
 
     &copy; 2025 SCOB000 StudentPortal Assignment. All rights reserved.
-    Developed by Boitumelo Mkhondo aka Kalashnikov | Contact: <a href="mailto:support@studentportal.edu">support@studentportal.edu</a>
+    Developed by Boitumelo Mkhondo aka GlitchLord | Contact: <a href="mailto:support@studentportal.edu">support@studentportal.edu</a>
 
   </footer>
 </body>
